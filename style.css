@@ -1,0 +1,125 @@
+*{
+    margin:0;
+    padding:0;
+}
+.body{
+    background-image:url(images.jpg);
+    background-repeat: no-repeat;
+    width:100%;
+    height:109vh;
+    background-size:cover;
+}
+.head{
+    width:350px;
+    height:50px;
+    margin-left:20px;
+    margin-right:120px;
+    margin-top:5px;
+    margin-bottom:2px;
+    padding-bottom:10px;
+    
+
+}
+h2{
+    color:#faebd7;
+    font-size:35px;
+    padding:10px;
+}
+span{
+    color:#03a9f4;
+}
+.para{
+    margin-left:30px;
+    border-top:80px;
+    margin-top:30px;
+
+
+}
+.rule{
+    width:120px;
+    margin-top:60px;
+    margin-left:40px;
+
+}
+.he{
+    color:#03a9f4;
+}
+.par{
+    color:#fff;
+    font-size:20px;
+}
+.login{
+    width:500px;
+    height:380px;
+    background:linear-gradient(to top,rgba(0,0,0,0.2)0%,rgba(0,0,0,0.2)0%);
+    position:absolute;
+    margin-top:-80px;
+   margin-left:700px;
+    border-radius:10px;
+    padding:3px 5px 3px 30px;
+    
+
+
+
+
+}
+.capt{
+    color:#fff;
+    font-size:20px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing:1px;
+    text-align:center;
+    padding-bottom:10px
+   
+}
+.title{
+       border-top:1px;
+        border-bottom:1px;
+        border-left:1px;
+        border-right:1px;
+        padding-bottom:20px;
+        border-radius:5px;
+        padding-left:40px;
+        background-color:black;
+        background:transparent;
+        color:#fff;
+        border:1px solid #fff;
+        padding-bottom:10px;
+        padding-top:10px;
+        padding-right:10px;
+        height:30px;
+        margin-left:5px;
+        margin-top:5px;
+        font-size:14px;
+        
+       
+}
+.form input:focus{
+    
+    outline: 1px#fff solid;
+    font-size:90px;
+}
+.check{
+    margin-top:15px;
+    margin-left:3px;
+}
+.cont{
+    color:#fff;
+    margin-left:20px;
+    margin-top:-17px;
+    padding-bottom:8px;
+}
+.submit{
+    background-color: dodgerblue;
+    box-sizing:200px;
+    margin-top:5px;
+    margin-left:10px;
+    margin-right:20px;
+    margin-bottom:5px;
+    width:450px;
+    height:30px;
+    border-radius:7px;
+}
+.submit:hover{
+    background-color:#fff;
+}

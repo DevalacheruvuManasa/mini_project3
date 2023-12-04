@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body class="body">
+    <script>
+        function validate(){
+            var FS=document.getElementById("firstname").value;
+            var LS=document.getElementById("lastname").value;
+            var con=document.getElementById("country").value;
+            var pho=document.getElementById("number").value;
+            var OA=document.getElementById("name").value;
+            var OS=document.getElementById("site").value;
+            var mail=document.getElementById("email").value;
+            
+            re1=/\D[^\W]$/
+            re2=/\D[^\W]$/
+            re3=/\D[^\W]$/
+            re4=/^[0-9]\d{9}$/
+            re5=/\D[^\W]$/
+            re6=/\D[^\W]$/
+            re7=/@gmail.com/
+            
+            
+            if(!re1.test(FS))
+            {
+                alert("Enter the valid FirstName should not contain special characters");
+                return false;
+            }
+            else if(!re2.test(LS)){
+                
+                alert("Enter the valid LastName should not contain special characters");
+                return false;
+            }
+            else if(!re3.test(con)){
+                
+                alert("Enter the Country Name Properly");
+                return false;
+            }
+            else if(!re4.test(pho)){
+                
+                alert(" Invalid Phone number");
+                return false;
+            }
+            else if(!re5.test(OA)){
+                
+                alert("Enter Organisation name correctly");
+                return false;
+            }
+            else if(!re6.test(OS)){
+                
+                alert("Enter organisation site correctly");
+                return false;
+            }
+            else if(!re7.test(mail)){
+                
+                alert("Enter valid mail");
+                return false;
+            }
+            return true;
+        }
+    </script>
+    <div>
+        <div class="head">
+            <h2>The <span> Next Gen </span>LMS Platform</h2>
+        </div>
+        <div class="rule">
+            <hr class="he">
+        </div>
+        <div  class="para">
+            <p class="par">Train,Track & Evaluate Your Team-All in One Place</p>
+        </div>
+        <div class="login">
+            <h5 class="capt">Get Your Free LMS Platform Now</h5>
+            <input type="text" placeholder="FirstName*" class="title" id="firstname">
+            <input type="text" placeholder="LastName*" class="title" id="lastname">
+            <input type="text" placeholder="Country*" class="title" id="country">
+            <input type="text" placeholder="Phone Number*" class="title"id="number">
+            <input type="text" placeholder="Organisation Name*" class="title" size="49" id="name">
+            <input type="text" placeholder="Organisation Site*" class="title" id="site">
+            <input type="text" placeholder="Work E-MAIL*" class="title" id="email">
+            <div class='check'>
+               <input type="checkbox" size="5">
+               <p class="cont">I agree to the Terms and Conditions.</p>
+           </div>
+           <input type="submit" value="submit" size="30" class="submit" onclick="return validate()"/>
+        </div>
+    </div>
+   
+    
+</body>
+</html>
